@@ -1,0 +1,28 @@
+name       : gnome-text-editor
+version    : 43.1
+release    : 1
+source     :
+    - https://gitlab.gnome.org/GNOME/gnome-text-editor/-/archive/43.1/gnome-text-editor-43.1.tar.gz : be64a3d60704537425a6ce8960ffb5bc9ba33f3ca13139ded80c30d0073ca34a
+license    : GPL-2.0-or-later # CHECK ME
+component  : desktop.gnome
+summary    : A simple text editor for GNOME.
+description: |
+    A simple text editor for GNOME.
+builddeps  :
+    - pkgconfig(gtk4)
+    - pkgconfig(libpcre)
+    - pkgconfig(editorconfig)
+    - pkgconfig(enchant-2)
+    - desktop-file-utils
+    - libicu
+    - libadwaita
+    - libgtksourceview5
+    - libgtksourceview5-devel
+    - libadwaita-devel
+    - itstool
+setup      : |
+    %meson_configure
+build      : |
+    %ninja_build
+install    : |
+    %ninja_install
