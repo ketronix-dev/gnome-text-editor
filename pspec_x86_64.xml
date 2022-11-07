@@ -269,7 +269,7 @@
     </Package>
     <History>
         <Update release="1">
-            <Date>2022-10-24</Date>
+            <Date>2022-11-07</Date>
             <Version>43.1</Version>
             <Comment>Packaging update</Comment>
             <Name>Artem Dadashjants</Name>
